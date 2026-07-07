@@ -1,0 +1,26 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Temporary downloads and ZIP files
+temp_*
+*.mp4
+*.zip
+Downloads/
+
+# Cookies files containing session data (Bao mat)
+cookies.txt
+temp_cookies.txt
+
+# OS metadata
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
