@@ -22,7 +22,7 @@ source .venv/bin/activate
 # Nâng cap pip va cai dat
 echo "[+] Dang cai dat thu vien..."
 python3 -m pip install --upgrade pip
-pip install -r requirements.txt
+pip install -U -r requirements.txt
 
 # Chay Streamlit
 echo "[+] Dang khoi chay ung dung..."

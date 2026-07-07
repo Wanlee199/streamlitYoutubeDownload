@@ -24,7 +24,7 @@ call .venv\Scripts\activate
 :: Nâng cap pip va cai dat cac thu vien can thiet
 echo [+] Dang kiem tra va cai dat thu vien...
 python -m pip install --upgrade pip
-pip install -r requirements.txt
+pip install -U -r requirements.txt
 
 :: Khoi chay Streamlit
 echo [+] Dang khoi chay ung dung tren trinh duyet...
