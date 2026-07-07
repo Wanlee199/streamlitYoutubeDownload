@@ -2,13 +2,10 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
-# Cai dat cac thu vien can thiet va ffmpeg de yt-dlp gop video/audio
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    curl \
-    software-properties-common \
-    ffmpeg \
-    && rm -rf /var/lib/apt/lists/*
+# Cai dat ffmpeg (can thiet de yt-dlp ghep noi video/audio)
+RUN apt-get update --fix-missing && \
+    apt-get install -y --no-install-recommends ffmpeg && \
+    rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
