@@ -12,9 +12,9 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-:: Tao thu mu ao .venv neu chua co
+:: Tao thu muc ao .venv neu chua co
 if not exist .venv (
-    echo [+] Dang tao moi truong ao (virtual environment)...
+    echo [+] Dang tao moi truong ao venv...
     python -m venv .venv
 )
 
